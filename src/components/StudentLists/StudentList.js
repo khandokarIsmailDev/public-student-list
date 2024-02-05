@@ -2,7 +2,7 @@ import DeleteBtn from "@/utility/DeleteBtn";
 import Link from "next/link";
 async function getStudentData() {
   try {
-    const res = await fetch(`http://localhost:3000/api/v1/user`, {
+    const res = await fetch(`https://public-student-list-eic7.vercel.app/api/v1/user`, {
       cache: "no-store",
     });
     const data = await res.json();
