@@ -40,6 +40,7 @@ const EditStudent = () => {
         if (data.status === "success") {
             setLoading(false);
             toast.success(data.message);
+            router.push('/')
         } else {
             setLoading(false);
         }
